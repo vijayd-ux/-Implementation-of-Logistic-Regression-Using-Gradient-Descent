@@ -16,9 +16,22 @@ To write a program to implement the the Logistic Regression Using Gradient Desce
 ## Program:
 ```
 /*
+
+
+
+
+
+
 Program to implement the the Logistic Regression Using Gradient Descent.
 Developed by: VIJAY D
 RegisterNumber:  212225230300
+
+
+
+
+
+
+
 
 import numpy as np
 import pandas as pd
@@ -42,6 +55,11 @@ theta = np.zeros(X.shape[1])
 alpha = 0.1
 cost_history = []
 
+
+
+
+
+
 for i in range(500):
     z = X @ theta
     h = sigmoid(z)
@@ -54,6 +72,13 @@ y_pred = (sigmoid(X @ theta) >= 0.5).astype(int)
 accuracy = np.mean(y_pred == y) * 100
 print("Weights:", theta)
 print("Accuracy:", accuracy, "%")
+
+
+
+
+
+
+
 plt.figure()
 plt.plot(cost_history)
 plt.xlabel("Iterations")
